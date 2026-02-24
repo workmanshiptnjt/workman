@@ -1,9 +1,3 @@
 {
-  "buildCommand": "cd workman && npm run build",
-  "devCommand": "cd workman && npm run dev",
-  "installCommand": "cd workman && npm install",
-  "framework": "nextjs",
-  "nodeVersion": "18.x",
-  "outputDirectory": "workman/.next",
   "root": "workman"
 }
