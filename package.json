@@ -1,15 +1,15 @@
 {
-  "name": "workmanship-root",
+  "name": "workmanship",
   "version": "1.0.0",
-  "description": "Workmanship app showcase",
-  "private": true,
-  "workspaces": [
-    "workman"
-  ],
+  "description": "A Christian devotional web app for daily spiritual growth and prayer.",
   "scripts": {
     "dev": "cd workman && npm run dev",
     "build": "cd workman && npm run build",
     "start": "cd workman && npm run start",
     "lint": "cd workman && npm run lint"
-  }
+  },
+  "keywords": ["faith", "devotional", "prayer", "christian", "worship"],
+  "author": "workmanshiptnjt",
+  "license": "MIT"
 }
+

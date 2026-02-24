@@ -1,3 +1,11 @@
 {
-  "root": "workman"
+  "build": {
+    "env": {
+      "VERCEL_PROJECT_NAME": "workmanship"
+    }
+  },
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install"
 }
+
