@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Brain, Download, Star } from 'lucide-react';
+import { Download, Star } from 'lucide-react';
 import FeatureShowcase from '@/components/FeatureShowcase';
 
 const features = [
@@ -74,11 +74,11 @@ const testimonials = [
 
 export default function HomePage() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden bg-black">
       {/* Animated background gradients */}
       <div className="fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-600/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/2 -left-40 w-96 h-96 bg-gradient-to-br from-blue-600/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-purple-600/20 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 -left-40 w-96 h-96 bg-gradient-to-br from-blue-600/20 to-transparent rounded-full blur-3xl"></div>
       </div>
 
       {/* Hero Section */}
@@ -86,7 +86,7 @@ export default function HomePage() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left content */}
-            <div className="space-y-8 animate-fadeInLeft">
+            <div className="space-y-8">
               <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="text-white">Grow Your </span>
                 <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">Faith Daily</span>
@@ -123,8 +123,8 @@ export default function HomePage() {
             </div>
 
             {/* Right visual */}
-            <div className="animate-fadeInRight flex justify-center">
-              <div className="relative h-96 flex items-center justify-center animate-float">
+            <div className="flex justify-center">
+              <div className="relative h-96 flex items-center justify-center">
                 <div className="relative w-full h-full flex items-center justify-center">
                   {/* Animated phone frame */}
                   <div className="w-64 h-96 rounded-3xl bg-gradient-to-br from-purple-500/20 to-purple-900/20 border-2 border-purple-500/50 shadow-2xl flex items-center justify-center overflow-hidden hover:scale-105 transition-transform">
@@ -136,10 +136,10 @@ export default function HomePage() {
                   </div>
 
                   {/* Floating elements */}
-                  <div className="absolute top-10 right-0 p-3 bg-blue-500/20 rounded-lg border border-blue-500/50 animate-bounce-slow">
+                  <div className="absolute top-10 right-0 p-3 bg-blue-500/20 rounded-lg border border-blue-500/50">
                     <div className="w-6 h-6 text-blue-400">🧠</div>
                   </div>
-                  <div className="absolute bottom-20 left-0 p-3 bg-pink-500/20 rounded-lg border border-pink-500/50 animate-bounce-slow">
+                  <div className="absolute bottom-20 left-0 p-3 bg-pink-500/20 rounded-lg border border-pink-500/50">
                     <div className="w-6 h-6 text-pink-400">❤️</div>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export default function HomePage() {
       {/* Features Grid */}
       <section className="relative py-20">
         <div className="container">
-          <div className="text-center mb-16 animate-fadeIn">
+          <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-4">
               <span className="text-white">Powerful </span>
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Features</span>
@@ -173,7 +173,7 @@ export default function HomePage() {
       {/* Testimonials */}
       <section className="relative py-20">
         <div className="container">
-          <div className="text-center mb-16 animate-fadeIn">
+          <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-4">
               <span className="text-white">Loved by </span>
               <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Believers</span>
@@ -184,7 +184,7 @@ export default function HomePage() {
             {testimonials.map((testimonial, idx) => (
               <div
                 key={idx}
-                className="p-8 rounded-2xl bg-gradient-to-br from-gray-900/50 to-black border border-purple-900/20 hover:border-purple-500/50 transition-all hover:-translate-y-2 duration-300 animate-scaleIn"
+                className="p-8 rounded-2xl bg-gradient-to-br from-gray-900/50 to-black border border-purple-900/20 hover:border-purple-500/50 transition-all hover:-translate-y-2 duration-300"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="text-4xl">{testimonial.avatar}</div>
@@ -208,9 +208,9 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="relative py-20">
         <div className="container">
-          <div className="relative overflow-hidden rounded-3xl p-12 lg:p-20 bg-gradient-to-br from-purple-900/30 to-black border border-purple-500/20 animate-fadeIn">
+          <div className="relative overflow-hidden rounded-3xl p-12 lg:p-20 bg-gradient-to-br from-purple-900/30 to-black border border-purple-500/20">
             {/* Background animation */}
-            <div className="absolute inset-0 opacity-20 blur-3xl animate-pulse">
+            <div className="absolute inset-0 opacity-20 blur-3xl">
               <div className="h-full w-full bg-gradient-to-r from-purple-600 to-pink-600" />
             </div>
 
