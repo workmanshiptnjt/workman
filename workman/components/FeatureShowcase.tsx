@@ -3,7 +3,7 @@
 interface FeatureShowcaseProps {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: React.ReactNode | string;
   gradient: string;
   delay?: number;
 }
@@ -17,10 +17,9 @@ export default function FeatureShowcase({
 }: FeatureShowcaseProps) {
   return (
     <div
-      className="group relative overflow-hidden rounded-2xl p-8 border border-purple-900/20 bg-gradient-to-br from-gray-900/50 to-black hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1"
+      className="group relative overflow-hidden rounded-2xl p-8 border border-purple-900/20 bg-gradient-to-br from-gray-900/50 to-black hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 animate-scaleIn"
       style={{
-        animation: `scaleIn 0.6s ease-out forwards`,
-        animationDelay: `${delay * 100}ms`,
+        animationDelay: `${delay}s`,
       }}
     >
       {/* Animated gradient background */}

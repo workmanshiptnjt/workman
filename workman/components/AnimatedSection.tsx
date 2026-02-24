@@ -1,78 +1,10 @@
-'use client';
-
-import { motion } from 'framer-motion';
-import React from 'react';
-
-interface AnimatedSectionProps {
-  children: React.ReactNode;
-  delay?: number;
-  className?: string;
-}
-
-export function FadeInUp({ children, delay = 0, className }: AnimatedSectionProps) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, delay }}
-      viewport={{ once: true }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-export function ScaleIn({ children, delay = 0, className }: AnimatedSectionProps) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, delay }}
-      viewport={{ once: true }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-export function SlideInLeft({ children, delay = 0, className }: AnimatedSectionProps) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, x: -40 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay }}
-      viewport={{ once: true }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-export function SlideInRight({ children, delay = 0, className }: AnimatedSectionProps) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, x: 40 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, delay }}
-      viewport={{ once: true }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-export function FloatingAnimation({ children, className }: AnimatedSectionProps) {
-  return (
-    <motion.div
-      animate={{ y: [0, -10, 0] }}
-      transition={{ duration: 3, repeat: Infinity }}
-      className={className}
-    >
-      {children}
-    </motion.div>
-  );
-}
+// DEPRECATED: This file is no longer used
+// All animations have been migrated to pure CSS keyframes in app/globals.css
+// Kept for reference only - do not import or use
+//
+// Previous framer-motion components that have been replaced:
+// - FadeInUp → CSS class animate-fadeInUp
+// - ScaleIn → CSS class animate-scaleIn  
+// - SlideInLeft → CSS class animate-fadeInLeft
+// - SlideInRight → CSS class animate-fadeInRight
+// - FloatingAnimation → CSS class animate-float
