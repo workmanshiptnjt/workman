@@ -15,7 +15,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-black text-white shadow-2xl z-50 border-b border-purple-900/10\">
+    <nav className="fixed top-0 left-0 right-0 bg-black text-white shadow-2xl z-50 border-b border-purple-900/10">
       <div className="container flex justify-between items-center py-4">
         <Link href="/" className="text-2xl font-bold gradient-text">
           Workmanship
